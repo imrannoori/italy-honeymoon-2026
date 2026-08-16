@@ -4,63 +4,75 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#a84935">
-<title>Amore in Italia · Imran &amp; Sadia · September 2026</title>
+<title>Travel &amp; Stay · Imran &amp; Sadia · Italy 2026</title>
 <style>
-:root{--ink:#302925;--bg:#f2eadf;--card:#fffdf8;--olive:#3e5a45;--terr:#a84935;--gold:#c58a3a;--mut:#756d66;--grn:#3e5a45;--red:#a84935;--r:4px}
+:root{--ink:#2c2c2c;--bg:#fdfbf7;--card:#fffefa;--olive:#53604b;--terr:#9b765f;--gold:#b79b78;--mut:#73716c;--grn:#53604b;--red:#9b765f;--line:#dedbd3;--serif:Georgia,'Times New Roman',serif}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;padding-bottom:40px;background-image:radial-gradient(rgba(168,73,53,.08) 1px,transparent 1px);background-size:20px 20px}
-header{color:#fff;padding:88px 20px 70px;text-align:center;background:linear-gradient(180deg,rgba(38,63,49,.18),rgba(103,42,31,.9)),radial-gradient(circle at 15% 15%,#e3b06b 0 5%,transparent 22%),linear-gradient(145deg,#5a7758,#b96243 63%,#e9b06a);position:relative;overflow:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;padding-bottom:40px}
+header{min-height:470px;color:#fff;padding:30px 28px 58px;text-align:center;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(180deg,rgba(40,53,43,.08),rgba(51,41,31,.72)),url('https://images.unsplash.com/photo-1632851853275-7882469dfe99?auto=format&amp;fit=crop&amp;w=2200&amp;q=90') center/cover;position:relative;overflow:hidden}
 header:before{content:'❦';position:absolute;top:15px;left:50%;font-size:2rem;opacity:.72;transform:translateX(-50%) rotate(8deg)}
 header:after{content:'ROMA  ✦  CHIANTI  ✦  COSTA AMALFITANA';display:block;margin-top:28px;font-size:.63rem;letter-spacing:3px;opacity:.82}
-header h1{font:normal clamp(2.7rem,9vw,5rem)/.94 Georgia,'Times New Roman',serif;letter-spacing:-1.8px;text-shadow:0 3px 20px rgba(0,0,0,.25)}
+header h1{font:normal clamp(3rem,10vw,6.4rem)/.9 var(--serif);letter-spacing:-2.5px;text-shadow:0 3px 20px rgba(0,0,0,.25);max-width:850px;margin:0 auto}
+header h1:before{display:none}
 header p{font:italic 1.08rem Georgia,'Times New Roman',serif;opacity:.98;margin:18px auto 0;letter-spacing:.2px;max-width:480px}
 header .eyebrow{display:block;margin-bottom:14px;text-transform:uppercase;font-size:.67rem;letter-spacing:4px;font-weight:700;opacity:.8}
-nav{position:sticky;top:0;z-index:9;display:flex;gap:8px;padding:10px 12px;background:rgba(242,234,223,.95);overflow-x:auto;border-bottom:1px solid #ddcebd;backdrop-filter:blur(8px)}
-nav button{flex:0 0 auto;border:1px solid #d9c8b5;background:transparent;color:var(--ink);padding:10px 17px;min-height:42px;border-radius:999px;font-size:.86rem;font-weight:600;cursor:pointer;touch-action:manipulation}
-nav button.active{background:var(--olive);border-color:var(--olive);color:#fff}
-main{max-width:760px;margin:0 auto;padding:0 4px}
+nav{position:sticky;top:0;z-index:9;display:flex;justify-content:center;gap:26px;padding:14px 18px;background:rgba(247,244,236,.95);overflow-x:auto;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+nav button{flex:0 0 auto;border:0;background:transparent;color:var(--mut);padding:7px 2px;min-height:38px;font:normal .78rem var(--serif);letter-spacing:1.2px;text-transform:uppercase;cursor:pointer;touch-action:manipulation;border-bottom:1px solid transparent}
+nav button.active{color:var(--terr);border-bottom-color:var(--terr)}
+main{max-width:1040px;margin:0 auto;padding:0 26px}
 section{display:none} section.active{display:block}
-.card{background:rgba(255,253,248,.88);border:1px solid rgba(123,66,48,.12);border-radius:4px;padding:18px;margin:14px 12px;box-shadow:0 8px 24px rgba(89,55,32,.07);position:relative;overflow-wrap:anywhere}
-.card:before{content:'';position:absolute;left:0;top:16px;bottom:16px;width:3px;background:var(--terr);border-radius:4px}
+.card{background:transparent;border:0;border-radius:0;padding:34px 0;margin:18px 0;box-shadow:none;position:relative;overflow-wrap:anywhere}
+.card:before{display:none}
 .card h2{font-family:Georgia,'Times New Roman',serif;font-size:1.2rem;color:var(--olive);margin-bottom:8px;letter-spacing:-.2px}
 .card h3{font-family:Georgia,'Times New Roman',serif;font-size:1rem;margin:14px 0 4px;color:var(--terr)}
-.story{padding:32px 22px 20px;margin-top:20px;text-align:center;border:0;background:transparent;box-shadow:none}
+.story{padding:92px 22px 58px;margin-top:0;text-align:center;border:0;background:transparent;box-shadow:none}
 .story:before{display:none}.story h2{font-size:1.9rem;color:var(--terr)}
 .story p{max-width:570px;margin:0 auto;color:#655b53;font-size:1rem}
-.story .kicker{font-size:.68rem;text-transform:uppercase;letter-spacing:3px;color:var(--gold);font-weight:700;margin-bottom:8px}
-.route{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 12px}
-.route a{text-decoration:none;color:inherit;background:#fffdf8;border:1px solid #e0d2c2;padding:14px 10px;text-align:center;box-shadow:0 6px 18px rgba(89,55,32,.06);transition:transform .2s ease}
+.story .kicker{font-size:.68rem;text-transform:uppercase;letter-spacing:3px;color:var(--gold);font-weight:700;margin-bottom:14px}
+.story h2,.card h2{font-weight:normal;letter-spacing:-.5px}.story h2{font-size:clamp(2rem,5vw,3.4rem)}
+.story h2:after{content:'Villa Giona';display:block;font:italic 2rem/1.2 cursive;color:var(--olive);margin-top:5px}
+.route{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:0;background:var(--line)}
+.route a{text-decoration:none;color:inherit;background:var(--bg);padding:24px 10px;text-align:center;transition:background .2s ease}
 .route a:hover{transform:translateY(-3px)}.route strong{display:block;font:normal 1.12rem Georgia,serif;color:var(--olive)}.route span{font-size:.72rem;color:var(--mut);text-transform:uppercase;letter-spacing:1px}
-.cta{display:inline-block;background:var(--terr);color:#fff!important;text-decoration:none;padding:10px 18px;border-radius:999px;font-weight:700;font-size:.85rem;margin-top:16px;box-shadow:0 5px 12px rgba(168,73,53,.22)}
+.cta{display:inline-block;color:var(--ink)!important;text-decoration:none;padding:10px 2px;border-bottom:1px solid var(--ink);font-size:.8rem;letter-spacing:1.4px;text-transform:uppercase;margin-top:16px}
 .row{display:flex;gap:10px;padding:8px 0;border-bottom:1px dashed #e2d5c6;font-size:.92rem}
 .row:last-child{border-bottom:none}
 .row b.t{min-width:52px;color:var(--terr);font-variant-numeric:tabular-nums;font-size:.82rem;letter-spacing:.3px}
 .open{color:#a06d2c;font-style:italic}
 .chip{font-family:ui-monospace,Menlo,monospace;background:#f2eee6;border:1px solid #dfd2c2;padding:2px 8px;border-radius:3px;font-size:.85rem;word-break:break-all}
-.copy{border:none;background:var(--olive);color:#fff;border-radius:3px;padding:7px 10px;font-size:.75rem;margin-left:6px;cursor:pointer;vertical-align:middle;min-height:34px;touch-action:manipulation}
+.copy{border:1px solid var(--line);background:transparent;color:var(--olive);border-radius:0;padding:7px 10px;font-size:.75rem;margin-left:6px;cursor:pointer;vertical-align:middle;min-height:34px;touch-action:manipulation}
 .mut{color:var(--mut);font-size:.83rem}
 a{color:var(--grn)}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:8px;background:var(--line)}
 .grid .cell{background:#f5eee5;border-radius:2px;padding:10px;font-size:.85rem;border-left:2px solid var(--gold)}
-.daytag{display:inline-block;background:var(--terr);color:#fff;border-radius:2px;padding:3px 10px;font-size:.72rem;font-weight:700;letter-spacing:1px;margin-bottom:8px}
+.editorial{display:grid;grid-template-columns:minmax(210px,.8fr) 1.2fr;gap:44px;align-items:center;background:transparent;box-shadow:none;padding:64px 10px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.editorial:before{display:none}.editorial-photo{min-height:300px;background:linear-gradient(180deg,rgba(58,66,49,.08),rgba(63,51,38,.42)),url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&amp;fit=crop&amp;w=1000&amp;q=85') center/cover;position:relative;box-shadow:14px 14px 0 rgba(185,150,99,.25)}
+.editorial-photo:after{content:'ITALIA';position:absolute;bottom:15px;left:18px;color:#fff;font:normal .7rem var(--serif);letter-spacing:4px}
+.editorial h2{font-size:clamp(1.8rem,4vw,3rem);color:var(--ink)}.editorial h2 em{font:italic 2rem cursive;color:var(--olive)}
+.places{padding:56px 0 20px}.places-intro{text-align:center;max-width:600px;margin:0 auto 30px}.places-intro h2{font:normal clamp(2rem,5vw,3.5rem) var(--serif);color:var(--ink)}.places-intro h2 em{font:italic 2rem cursive;color:var(--olive)}.places-intro p{color:var(--mut)}.place-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.place{position:relative;min-height:360px;overflow:hidden;background:#8c9279;color:#fff;display:flex;align-items:flex-end;text-decoration:none}.place img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.78) sepia(.12)}.place:after{content:'';position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(30,34,27,.82))}.place-copy{position:relative;z-index:1;padding:22px}.place-copy small{display:block;text-transform:uppercase;letter-spacing:3px;font-size:.62rem;margin-bottom:6px;opacity:.8}.place-copy strong{font:normal 2rem var(--serif);display:block}.place-copy span{font-size:.8rem;opacity:.9}.vision{padding:70px 0 30px}.vision-head{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:18px}.vision-head span{font-size:.65rem;text-transform:uppercase;letter-spacing:3px;color:var(--gold)}.vision-head h2{font:normal clamp(1.8rem,4vw,3rem) var(--serif)}.vision-head em{font:italic 2rem cursive;color:var(--olive)}.vision-grid{display:grid;grid-template-columns:1.1fr .8fr 1fr;grid-auto-rows:180px;gap:12px}.vision-grid img{width:100%;height:100%;object-fit:cover;filter:saturate(.8) sepia(.08)}.vision-grid .v-wide{grid-column:span 2}.vision-grid .v-tall{grid-row:span 2}
+.stay-block{display:grid;grid-template-columns:.9fr 1.1fr;gap:58px;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:76px 0}.stay-photo{min-height:430px;background:linear-gradient(180deg,rgba(65,65,48,.02),rgba(55,47,39,.25)),url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&amp;fit=crop&amp;w=1000&amp;q=85') center/cover}.stay-copy h2{font:normal clamp(2rem,4vw,3rem) var(--serif);color:var(--ink);margin-bottom:22px}.stay-copy h2 em{font:italic 2rem cursive;color:var(--olive)}.stay-copy h3{font-weight:normal;color:var(--ink);border-top:1px solid var(--line);padding-top:15px;margin-top:20px}.stay-copy p{color:var(--mut)}
+.check-layout{display:grid;grid-template-columns:1fr 1fr;gap:50px;border-top:1px solid var(--line);padding-top:30px}.check-card{padding:20px 0}.check-card h2{font-size:1.7rem;margin-bottom:18px}.check-card label{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line);font-size:.92rem;cursor:pointer}.check-card input{appearance:none;width:19px;height:19px;flex:0 0 19px;border:1px solid var(--olive);margin:2px 0 0;position:relative;cursor:pointer}.check-card input:checked{background:var(--olive)}.check-card input:checked:after{content:'✓';position:absolute;color:#fff;font-size:14px;left:3px;top:-3px}.check-card input:checked+*{text-decoration:line-through}
+.add-item{display:flex;gap:8px;margin:0 0 10px}.add-item input{min-width:0;flex:1;border:0;border-bottom:1px solid var(--line);background:transparent;padding:9px 0;font:inherit;color:var(--ink)}.add-item button{border:1px solid var(--olive);background:transparent;color:var(--olive);padding:7px 13px;cursor:pointer}.custom-list{margin-bottom:4px}
+.daytag{display:inline-block;background:transparent;color:var(--terr);border:1px solid var(--terr);border-radius:0;padding:3px 10px;font-size:.72rem;font-weight:700;letter-spacing:1px;margin-bottom:8px}
 ul{padding-left:20px;font-size:.92rem}
 li{margin:4px 0}
 footer{max-width:760px;margin:20px auto 0;padding:0 16px;font-size:.78rem;color:var(--mut)}
-@media (max-width:520px){header{padding:62px 18px 50px}nav{padding:9px 10px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}.card{padding:16px;margin:12px 8px}.card h2{font-size:1.12rem}.row{font-size:.88rem;align-items:flex-start}.row b.t{min-width:48px}.grid{gap:6px}.grid .cell{padding:8px;font-size:.8rem}.route{gap:6px;margin-left:8px;margin-right:8px}.route a{padding:12px 5px}.route strong{font-size:1rem}.route span{font-size:.6rem;letter-spacing:.5px}.story{padding-left:12px;padding-right:12px}.story h2{font-size:1.5rem}.cta{min-height:44px;padding:12px 18px}.chip{font-size:.76rem}}
+@media (max-width:640px){header{min-height:520px;padding:24px 18px 58px}nav{justify-content:flex-start;gap:22px;padding:9px 14px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}main{padding:0 12px}.card{padding:22px 16px;margin:12px 0}.card h2{font-size:1.18rem}.row{font-size:.88rem;align-items:flex-start}.row b.t{min-width:48px}.grid{gap:1px}.grid .cell{padding:10px 8px;font-size:.8rem}.route{margin:0 -12px}.route a{padding:18px 5px}.route strong{font-size:1rem}.route span{font-size:.6rem;letter-spacing:.5px}.story{padding:58px 10px 42px}.story h2{font-size:1.9rem}.cta{min-height:44px;padding:12px 18px}.chip{font-size:.76rem}.editorial{grid-template-columns:1fr;gap:26px;padding:42px 8px}.editorial-photo{min-height:230px}}
+@media (max-width:640px){.place-grid{grid-template-columns:1fr}.place{min-height:290px}.places{padding-top:42px}.vision{padding-top:44px}.vision-head{display:block}.vision-head h2{margin-top:10px}.vision-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:8px}.vision-grid .v-wide{grid-column:span 2}.vision-grid .v-tall{grid-row:span 2}.stay-block{grid-template-columns:1fr;gap:28px;padding:44px 0}.stay-photo{min-height:290px}.check-layout{grid-template-columns:1fr;gap:12px}.check-card{padding:12px 0}}
 </style>
 </head>
 <body>
 
 <header>
-<span class="eyebrow">A honeymoon in three Italian moods</span>
-<h1>Italy, we’re coming for you.</h1>
-<p>Eight unforgettable days of ancient streets, golden hills, and a sea-view finale.</p>
+<h1>Our love story, in Italy.</h1>
+<p>Eight slow, beautiful days beneath Roman skies, through Tuscan hills, and beside the sea.</p>
 </header>
 
 <nav aria-label="Trip sections">
 <button class="active" data-tab="overview" onclick="show('overview')">The Story</button>
 <button data-tab="itin" onclick="show('itin')">Itinerary</button>
 <button data-tab="book" onclick="show('book')">Bookings</button>
+<button data-tab="check" onclick="show('check')">Checklist</button>
 <button data-tab="tips" onclick="show('tips')">Tips</button>
 </nav>
 
@@ -71,13 +83,32 @@ footer{max-width:760px;margin:20px auto 0;padding:0 16px;font-size:.78rem;color:
 <div class="story">
 <div class="kicker">Per sempre · September 22–30, 2026</div>
 <h2>La dolce vita, made personal</h2>
-<p>For Imran &amp; Sadia, with amore. Start with espresso beneath the Colosseum, slow down among the vineyards of Chianti, then follow the coastline south to Cetara. A little Italian love story—planned around beautiful places, long lunches, golden sunsets, and room to wander.</p>
+<p id="love-verse">For Imran &amp; Sadia, with amore. Start with espresso beneath the Colosseum, slow down among the vineyards of Chianti, then follow the coastline south to Cetara. A little Italian love story—planned around beautiful places, long lunches, golden sunsets, and room to wander.</p>
 <a class="cta" href="#itin" onclick="show('itin');return false">Explore the journey ↓</a>
 </div>
 <div class="route" aria-label="Trip route">
 <a href="#itin" onclick="show('itin');return false"><strong>Roma</strong><span>Ancient + alive</span></a>
 <a href="#itin" onclick="show('itin');return false"><strong>Chianti</strong><span>Wine country</span></a>
 <a href="#itin" onclick="show('itin');return false"><strong>Cetara</strong><span>Sea + sunshine</span></a>
+</div>
+<div class="places">
+<div class="places-intro"><div class="kicker">Three places, one love story</div><h2>Italy, <em>as we imagined it</em></h2><p>Ancient stone, quiet vineyards, and the blue horizon — the three moods waiting for us.</p></div>
+<div class="place-grid">
+<a class="place" href="#itin" onclick="show('itin');return false"><img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Rome rooftops and historic architecture"><div class="place-copy"><small>Chapter I</small><strong>Roma</strong><span>Ancient streets · late dinners · golden light</span></div></a>
+<a class="place" href="#itin" onclick="show('itin');return false"><img src="https://images.unsplash.com/photo-1523528283115-9bf9b1699245?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Tuscany wine country with rolling hills and vineyards"><div class="place-copy"><small>Chapter II</small><strong>Chianti</strong><span>Vineyards · slow mornings · a country villa</span></div></a>
+<a class="place" href="#itin" onclick="show('itin');return false"><img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Amalfi Coast sea and colorful hillside towns"><div class="place-copy"><small>Chapter III</small><strong>Cetara</strong><span>Sea air · lemon trees · our final sunset</span></div></a>
+</div>
+</div>
+<div class="vision">
+<div class="vision-head"><span>Scenes from the trip</span><h2>A vision of <em>us in Italy</em></h2></div>
+<div class="vision-grid">
+<img class="v-wide" src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Rome at sunset">
+<img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Italian street in Rome">
+<img class="v-tall" src="https://images.unsplash.com/photo-1523528283115-9bf9b1699245?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Tuscany wine country with rolling hills and vineyards">
+<img src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Tuscan vineyard landscape">
+<img class="v-wide" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Amalfi Coast from the sea">
+<img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Italian coastal village">
+</div>
 </div>
 <div class="card">
 <h2>✦ Your Italian chapter</h2>
@@ -90,14 +121,16 @@ footer{max-width:760px;margin:20px auto 0;padding:0 16px;font-size:.78rem;color:
 </div>
 </div>
 
-<div class="card">
-<h2>🏨 Hotel Addresses (tap for map)</h2>
+<div class="card stay-block">
+<div class="stay-photo" aria-hidden="true"></div>
+<div class="stay-copy"><div class="kicker">The places we will call home</div><h2>Where to <em>stay</em></h2>
 <h3>Feliz In Roma · Sep 23–25</h3>
 <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Via+di+San+Giovanni+in+Laterano+262,+00184+Rome">Via di San Giovanni in Laterano 262, 00184 Rome</a> · Junior Suite</p>
 <h3>Hotel Villa Campomaggio · Sep 25–27</h3>
 <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Strada+Provinciale+2bis,+Loc.+Campomaggio,+53017+Radda+in+Chianti">Strada Provinciale 2bis, Loc. Campomaggio, 53017 Radda in Chianti (SI)</a> · Classic Double + SPA access</p>
 <h3>Hotel Cetus · Sep 27–30</h3>
 <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Corso+Umberto+1,+84010+Cetara">Corso Umberto 1, 84010 Cetara (SA)</a> · Double w/ Balcony, Sea View</p>
+</div>
 </div>
 
 <div class="card">
@@ -235,6 +268,15 @@ footer{max-width:760px;margin:20px auto 0;padding:0 16px;font-size:.78rem;color:
 
 </section>
 
+<!-- ================= CHECKLIST ================= -->
+<section id="check">
+<div class="story"><div class="kicker">A little peace of mind</div><h2>Ready for <em>Italy</em></h2><p>Tap each item as it’s done. Your progress is saved automatically on this device.</p><button class="cta" type="button" onclick="clearChecklist()">Reset checklist</button></div>
+<div class="check-layout">
+<div class="card check-card"><h2>Before we go</h2><label><input type="checkbox" data-check="passport"> Check passports are valid for the trip</label><label><input type="checkbox" data-check="insurance"> Buy travel insurance and save the policy offline</label><label><input type="checkbox" data-check="bank"> Tell banks we’re travelling in Italy</label><label><input type="checkbox" data-check="phone"> Confirm roaming or download an eSIM</label><label><input type="checkbox" data-check="documents"> Download flight, train, hotel, and transfer confirmations</label><label><input type="checkbox" data-check="maps"> Save offline maps for Rome, Chianti, Cetara, Salerno, and Naples</label><label><input type="checkbox" data-check="tickets"> Reconfirm flights and train times 72 hours before departure</label><label><input type="checkbox" data-check="checkin"> Complete online check-in and save boarding passes</label><label><input type="checkbox" data-check="cash"> Get a small amount of euros</label><label><input type="checkbox" data-check="home"> Arrange mail, plants, keys, and anything needed at home</label></div>
+<div class="card check-card"><h2>Bring with us</h2><label><input type="checkbox" data-check="passport-pack"> Passports and a backup photo of each passport</label><label><input type="checkbox" data-check="wallet"> Credit cards, debit card, and some euros</label><label><input type="checkbox" data-check="meds"> Prescription medication and a small first-aid kit</label><label><input type="checkbox" data-check="shoes"> Comfortable walking shoes</label><label><input type="checkbox" data-check="layers"> Light layers, a jacket, and one elegant dinner outfit</label><label><input type="checkbox" data-check="swim"> Swimwear and sandals for the Amalfi Coast</label><label><input type="checkbox" data-check="sun"> Sunglasses, sunscreen, and a hat</label><label><input type="checkbox" data-check="chargers"> Phone chargers, adapters, and a portable battery</label><label><input type="checkbox" data-check="daybag"> Small day bag and reusable water bottle</label><label><input type="checkbox" data-check="camera"> Camera or extra phone storage for photos</label></div>
+</div>
+</section>
+
 <!-- ================= TIPS ================= -->
 <section id="tips">
 
@@ -259,8 +301,16 @@ footer{max-width:760px;margin:20px auto 0;padding:0 16px;font-size:.78rem;color:
 <div class="card">
 <h2>🗣️ Handy Italian</h2>
 <ul>
-<li>Buongiorno = hello · Grazie = thank you · Il conto, per favore = the bill please</li>
-<li>Un tavolo per due = a table for two · Quanto costa? = how much?</li>
+<li><b>Buongiorno</b> = good morning / hello · <b>Buonasera</b> = good evening · <b>Grazie mille</b> = thank you very much</li>
+<li><b>Per favore</b> = please · <b>Scusi</b> = excuse me · <b>Mi dispiace</b> = I’m sorry · <b>Parla inglese?</b> = do you speak English?</li>
+<li><b>Un tavolo per due, per favore</b> = a table for two, please</li>
+<li><b>Il conto, per favore</b> = the bill, please · <b>Possiamo pagare con la carta?</b> = can we pay by card?</li>
+<li><b>Acqua naturale / frizzante</b> = still / sparkling water · <b>Un caffè, per favore</b> = a coffee, please</li>
+<li><b>Dov’è il bagno?</b> = where is the bathroom? · <b>Dov’è la stazione?</b> = where is the station?</li>
+<li><b>Quanto costa?</b> = how much is it? · <b>È troppo caro</b> = it’s too expensive</li>
+<li><b>Abbiamo una prenotazione</b> = we have a reservation · <b>La camera è pronta?</b> = is the room ready?</li>
+<li><b>Due biglietti per Roma</b> = two tickets to Rome · <b>Da quale binario?</b> = from which platform?</li>
+<li><b>Aiuto, per favore</b> = help, please · <b>Ho bisogno di una farmacia</b> = I need a pharmacy</li>
 </ul>
 </div>
 
@@ -287,6 +337,31 @@ function show(id){
   document.querySelectorAll('nav button').forEach(function(b){ b.classList.toggle('active', b.dataset.tab === id); });
   window.scrollTo(0,0);
 }
+var loveVerses = [
+  '“Love, that in gentle hearts is quickly learned, seized him with a sweetness that still lives in us.” — Dante Alighieri',
+  '“Love is a smoke made with the fume of sighs; being purged, a fire sparkling in lovers’ eyes.” — Shakespeare, Romeo and Juliet',
+  '“I find no peace, and all my war is done; I fear and hope, I burn and freeze like ice.” — Petrarch, Sonnet 134',
+  '“Love, which quickly takes hold in gentle hearts, seized him with such sweetness that it still lives in us.” — Dante, Inferno V'
+];
+var verse = document.getElementById('love-verse');
+if (verse) verse.textContent = loveVerses[Math.floor(Math.random() * loveVerses.length)] + ' For Imran & Sadia — Rome, Chianti, and the Amalfi Coast await.';
+document.querySelectorAll('[data-check]').forEach(function(box){
+  var key = 'italy2026-check-' + box.dataset.check;
+  box.checked = localStorage.getItem(key) === 'done';
+  box.addEventListener('change', function(){ if (box.checked) localStorage.setItem(key,'done'); else localStorage.removeItem(key); });
+});
+function setupCustomChecklist(){
+  document.querySelectorAll('.check-card').forEach(function(card,index){
+    var listName = index === 0 ? 'before' : 'bring';
+    var form = document.createElement('form'); form.className='add-item'; form.dataset.list=listName; form.onsubmit=function(e){ addChecklistItem(e,form); };
+    form.innerHTML='<input type="text" placeholder="'+(index===0?'Add a task…':'Add something to pack…')+'" required><button type="submit">Add</button>';
+    var custom=document.createElement('div'); custom.className='custom-list'; custom.dataset.customList=listName; card.insertBefore(form,card.children[1]); card.insertBefore(custom,card.children[2]); renderCustomItems(listName,custom);
+  });
+}
+function renderCustomItems(listName, target){ var items=JSON.parse(localStorage.getItem('italy2026-custom-'+listName)||'[]'); target.innerHTML=''; items.forEach(function(item,i){ var label=document.createElement('label'); label.innerHTML='<input type="checkbox" data-check="custom-'+listName+'-'+i+'"> '+item; target.appendChild(label); var box=label.querySelector('input'); box.checked=localStorage.getItem('italy2026-check-'+box.dataset.check)==='done'; box.onchange=function(){ if(box.checked)localStorage.setItem('italy2026-check-'+box.dataset.check,'done'); else localStorage.removeItem('italy2026-check-'+box.dataset.check); }; }); }
+function addChecklistItem(e,form){ e.preventDefault(); var input=form.querySelector('input'), text=input.value.trim(); if(!text)return; var name=form.dataset.list, items=JSON.parse(localStorage.getItem('italy2026-custom-'+name)||'[]'); items.push(text); localStorage.setItem('italy2026-custom-'+name,JSON.stringify(items)); renderCustomItems(name,form.nextElementSibling); input.value=''; }
+setupCustomChecklist();
+function clearChecklist(){ document.querySelectorAll('[data-check]').forEach(function(box){ box.checked=false; localStorage.removeItem('italy2026-check-' + box.dataset.check); }); localStorage.removeItem('italy2026-custom-before'); localStorage.removeItem('italy2026-custom-bring'); document.querySelectorAll('.custom-list').forEach(function(list){ list.innerHTML=''; }); }
 function cp(t, btn){
   function done(){ var o = btn.textContent; btn.textContent = 'Copied!'; setTimeout(function(){ btn.textContent = o; }, 1200); }
   function fallback(){
